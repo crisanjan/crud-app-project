@@ -1,0 +1,16 @@
+package com.springboot.crudproject.dao;
+
+import java.util.List;
+
+import com.springboot.crudproject.entity.Employee;
+
+public interface EmployeeDAO{
+
+	public List<Employee> findAll();
+	
+	public Employee findById(int id);
+	
+	public void save(Employee theEmployee);
+	
+	public void deleteById(int theId);
+}
